@@ -1,4 +1,3 @@
-import React from "react";
 import Mansonry from "./Mansory";
 
 export default function App() {
