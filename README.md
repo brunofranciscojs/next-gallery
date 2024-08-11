@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gallery in NextJS
+## This project is a gallery developed in ReactJS that uses Firebase to store images and their respective folders/categories. The visual design was inspired by folio.procreate.com with a masonry-style layout for an elegant appearance.
 
-## Getting Started
+## It reads images directly from Firestore, where categories are created based on each image's folder name.
 
-First, run the development server:
+## The project can be accessed at https://ilustras.brunofrancisco.com.br.
+
+### Technologies Used
+* ReactJS
+* SASS
+* Firebase/Firestore
+* JavaScript
+* Features
+* Displays images in a masonry-style gallery layout.
+* Allows filtering images by category.
+* Displays images in a modal when clicked.
+  
+### How to Use
+To use the gallery in your own project, follow these steps:
+
+### Clone the repository to your machine:
+```bash
+git clone https://github.com/brunofranciscu/galeria.git
+```
+Install dependencies:
+```bash
+cd galeria
+npm install
+```
+Configure the .env file with your Google Apps Script credentials.
+
+Run the project:
+```bash
+npm start
+```
+Contributing
+Contributions are always welcome. To contribute, follow these steps:
+
+Fork the repository.
+Create a new branch:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git checkout -b my-branch
 ```
+Make your changes and commit:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+git commit -m "My changes"
+```
+Push to your fork:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+git push origin my-branch
+```
+Create a pull request to the original repository.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Galeria em NextJS
 
-## Learn More
+Este projeto é uma galeria desenvolvida em ReactJS que utiliza firebase para armazenar as imagens e suas respectivas pastas/categorias. 
+O visual foi inspirado no https://folio.procreate.com e a aparência da galeria é em estilo masonry, deixando um visual elegante.
 
-To learn more about Next.js, take a look at the following resources:
+Ele lê as imagens diretamente do firestore, as categorias são criadas a partir do nome das pastas de cada imagem.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O projeto pode ser acessado em https://ilustras.brunofrancisco.com.br
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Tecnologias Utilizadas
+- NextJS
+- SASS
+- FireBase/FireStore
+- Javascript
 
-## Deploy on Vercel
+## Funcionalidades
+  - Exibe as imagens em uma galeria estilo masonry.
+  - Permite filtrar as imagens por categoria.
+  - Exibe as imagens em uma modal ao clicar em uma delas.
+  
+### Como Utilizar
+Para utilizar a galeria em seu próprio projeto, siga os passos abaixo:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Clone o repositório em sua máquina:
+```bash
+  - git clone https://github.com/brunofranciscu/galeria.git
+``` 
+### Instale as dependências:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+  - cd galeria
+  - npm install
+```
+Configure o arquivo .env com as credenciais de sua planilha no Google Apps Script.
+
+### Execute o projeto:
+```bash
+  - npm start
+```
+ 
+### Contribuindo
+Contribuições são sempre bem-vindas. Para contribuir, siga os passos abaixo:
+
+### Crie um fork do repositório.
+Crie uma nova branch:
+
+```bash
+  - git checkout -b minha-branch
+```
+Faça suas alterações e faça o commit:
+
+```bash
+  - git commit -m "Minhas alterações"
+```
+Faça o push para o seu fork:
+
+```bash
+  - git push origin minha-branch
+```
+Crie um pull request para o repositório original.
