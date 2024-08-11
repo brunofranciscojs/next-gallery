@@ -6,7 +6,7 @@
 ## The project can be accessed at https://ilustras.brunofrancisco.com.br.
 
 ### Technologies Used
-* ReactJS
+* NextJS
 * SASS
 * Firebase/Firestore
 * JavaScript
