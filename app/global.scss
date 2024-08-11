@@ -1,10 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body{
   @apply overflow-x-hidden bg-[#efefef] duration-200 [&:has(.fav)]:overflow-hidden
 }
-
 
 nav {
    position: fixed;

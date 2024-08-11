@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image.js';
 import React, { useEffect, useState } from 'react';
 import { getDownloadURL, listAll, ref, getMetadata, deleteObject } from "firebase/storage";
 import { images } from './fireBaseData';
@@ -6,7 +7,6 @@ import { FastAverageColor } from 'fast-average-color';
 import { useCategoria } from './Context';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
-import Image from 'next/image.js';
 import useAuth from "./useAuth";
 
 const Mansonry = () => {
@@ -194,7 +194,7 @@ const Mansonry = () => {
                                     width={0}
                                     height={0}
                                     priority
-                                    sizes="50vw"
+                                    sizes="100vw"
                                     onClick={() => abrirModal(url, pastinha.img)}
                                  />
                                 <figcaption className='flex flex-col justify-end text-left ' >

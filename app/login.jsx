@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import useAuth from './useAuth.jsx'
+import useAuth from './useAuth'
 
 export default function Logar() {
     const { login } = useAuth()

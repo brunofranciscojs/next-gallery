@@ -2,7 +2,7 @@
 import Compressor from 'compressorjs';
 import { ref, uploadBytesResumable } from "firebase/storage";
 import React, { useState } from "react";
-import { images } from "./firebaseData";
+import { images } from "./fireBaseData";
 import useAuth from './useAuth'
 import Logar from "./login";
 
@@ -11,7 +11,7 @@ import Logar from "./login";
     const [percent, setPercent] = useState(0)
     const [compressedFile, setCompressedFile] = useState(null)
     const [categoria, setCategoria] = useState('')
-    const { logado, sair } = useAuth()
+    const { logado } = useAuth()
     const [hasImage, sethasImage] = useState(false)
     const [logar, setLogar] = useState(false)
     const [preview, setPreview] = useState('')

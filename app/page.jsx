@@ -4,7 +4,7 @@ import Mansonry from "./Mansory";
 export default function App() {
 
   return (
-    <div className="App px-10">
+    <div className="app px-10">
       <div className='presentation duration-200 transition-all relative overflow-hidden z-0 my-[70px] max-w-[1100px] mx-auto sm:py-7 sm:px-16 text-left rounded-3xl flex bg-[length:100%,50%] px-8 py-8'>
 
         <div className="z-10 relative">

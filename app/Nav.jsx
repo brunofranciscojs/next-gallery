@@ -2,7 +2,7 @@
 import { listAll, ref } from "firebase/storage";
 import React, { useEffect, useState } from "react";
 import { images } from './fireBaseData';
-import { useCategoria } from "./Context.jsx";
+import { useCategoria } from "./Context";
 import useAuth from "./useAuth";
 import Upload from './addImage';
 
