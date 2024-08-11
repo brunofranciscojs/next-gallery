@@ -1,10 +1,10 @@
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { CategoriaProvider } from "./Context";
 import Nav from "./Nav";
 import { AuthProvider } from "./Auth";
 import "./global.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"], weight:["700" , "100" , "200" , "300" , "400" , "500" , "600" , "800" , "900"] });
 
 export const metadata = {
   title: "PORTFOLIO ESTUDOS PINTURA DIGITAL | BRUNO FRANCISCO",
@@ -15,14 +15,16 @@ export default function RootLayout({ children }) {
   return (
     <AuthProvider>
       <CategoriaProvider>
-      <html lang="pt-BR">
-        <body className={inter.className}>
-        <Nav/>
-        {children}
-          
-        </body>
-      </html>
+        <html lang="pt-BR">
+          <body className={poppins.className}>
+          <Nav/>
+          {children}
+            
+          </body>
+        </html>
       </CategoriaProvider>
     </AuthProvider>
   );
 }
+
+
