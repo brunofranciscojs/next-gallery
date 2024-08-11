@@ -8,7 +8,8 @@ export const AuthContext = createContext({})
 export const AuthProvider = ({ children }) =>{
     const [user, setUser] = useState()
     const [infos, setInfos] = useState([])
-
+    const [logado, setLogado] = useState(0)
+    
     useEffect(() => {
         if (typeof window !== 'undefined') {
             const savedLogado = localStorage.getItem('logado');
