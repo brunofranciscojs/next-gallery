@@ -153,6 +153,10 @@ progress::-webkit-progress-value {
    to{ filter: blur(0); }
 }
 
+@keyframes vanish{
+  to{opacity: 0; display: none;}
+}
+
 @media (prefers-color-scheme: dark) {
   body{
     background: #3A3B3C;

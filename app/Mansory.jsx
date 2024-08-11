@@ -157,7 +157,9 @@ const Mansonry = () => {
                     </div>
                 </>
             }
+
             <div className='mansonry' key='mansonry' style={{ zIndex: modal ? 99 : 5 }}>
+
                 {filtro.map((pastinha) => (
                     <span key={pastinha.cat}>
                         {pastinha.img.map(({ url, timeCreated }, index) => (
@@ -237,6 +239,7 @@ const Mansonry = () => {
                         </Splide>
                     </div>
                 )}
+
             </div>
         </>
     );
